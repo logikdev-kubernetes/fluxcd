@@ -12,6 +12,5 @@ spec:
   sourceRef:
     kind: GitRepository
     name: infrastructure
-  targetNamespace: default
   timeout: 3m0s
   wait: true
