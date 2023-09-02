@@ -2,11 +2,11 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: infrastructure
+  name: cert-manager
   namespace: flux-system
 spec:
   interval: 30m0s
-  path: ./
+  path: ./cert-manager/controller
   prune: true
   retryInterval: 2m0s
   sourceRef:
