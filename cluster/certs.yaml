@@ -16,3 +16,7 @@ spec:
     name: infrastructure
   timeout: 3m0s
   wait: true
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
