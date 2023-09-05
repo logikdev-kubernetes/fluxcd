@@ -5,6 +5,8 @@ metadata:
   name: postgres
   namespace: flux-system
 spec:
+  dependsOn:
+  - name: longhorn
   interval: 30m0s
   path: ./postgres
   prune: true

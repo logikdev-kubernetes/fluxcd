@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: certs
+    - name: longhorn
   interval: 30m0s
   path: ./redis
   prune: true

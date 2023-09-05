@@ -6,7 +6,9 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: certs
+    - name: redis
+    - name: postgres
+    - name: openldap
   interval: 30m0s
   path: ./authelia
   prune: true
