@@ -9,5 +9,4 @@ spec:
   ref:
     branch: main
   url: https://github.com/logikdev-kubernetes/seedbox
-  secretRef:
-    name: bearer-token-auth
+  
