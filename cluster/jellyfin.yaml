@@ -6,9 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   dependsOn:
-    - name: longhorn
     - name: cert-manager
-    - name: nfs-provisioner
   interval: 30m0s
   path: ./jellyfin
   prune: true
