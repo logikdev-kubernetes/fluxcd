@@ -2,10 +2,11 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: infrastructure
+  name: seedbox
   namespace: flux-system
 spec:
   interval: 1m0s
   ref:
     branch: main
-  url: https://github.com/logikdev-kubernetes/infrastructure
+  url: https://github.com/logikdev-kubernetes/seedbox
+  

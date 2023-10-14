@@ -1,0 +1,24 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1
+kind: Kustomization
+metadata:
+  name: authelia
+  namespace: flux-system
+spec:
+  dependsOn:
+    - name: redis
+    - name: postgres
+    - name: openldap
+  interval: 30m0s
+  path: ./authelia
+  prune: true
+  retryInterval: 2m0s
+  sourceRef:
+    kind: GitRepository
+    name: infrastructure
+  timeout: 3m0s
+  wait: true
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
